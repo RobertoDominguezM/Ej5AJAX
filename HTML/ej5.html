@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejercicio 5 de los apuntes</title>
         <script src="../scripts/ej5.js"></script>
+        <link type="text/css" rel="stylesheet" href="../CSS/ej5.css">
     </head>
     <body>
         <form id="materialDeportivo">
@@ -13,14 +14,31 @@
             DNI:<input type="texto" name="dni" id="dni"><br>
             Fecha de nacimiento<input type="date" name="fecha" id="fecha"><br>
             Sexo<br>
-            <input type="radio" name="mujer" id="mujer" value="M">
+            <input type="radio" name="sexo" id="mujer" value="M">
             <label for="mujer">Mujer</label><br>
-            <input type="radio" name="hombre" id="hombre" value="H">
+            <input type="radio" name="sexo" id="hombre" value="H">
             <label for="hombre">Hombre</label><br>
+            Deportes de exterior
             <input type="checkbox" name="exterior" id="exterior" value="ext"><br>
+            Deportes de equipo
             <input type="checkbox" name="equipo" id="equipo" value="equi"><br>
+            Deportes individuales
             <input type="checkbox" name="individuales" id="individuales" value="indv"><br>
+            Deportes de interior
             <input type="checkbox" name="interior" id="interior" value="int"><br>
+            <input type="submit" name="botonBorrar" value="Borrar" id="botonBorrar">
+            <input type="submit" name="botonActualizar" value="Actualizar" id="botonActualizar">
         </form>
+        <table id="tabla">
+            <tr>
+                <td>Id</td>
+                <td>Nombre y apellidos</td>
+                <td>Fecha nacimiento</td>
+                <td>Sexo</td>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
     </body>
 </html>
