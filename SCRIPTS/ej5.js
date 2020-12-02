@@ -1,5 +1,25 @@
 window.onload = () => {
+    document.getElementById("materialDeportivo").addEventListener('submit', añadirClientes, false);
+}
+/**
+ * Función para añadir clientes en la tabla
+ */
 
+function añadirClientes(event){
+    let nuevoCliente = {
+        nombre: document.getElementById("nombreCliente").value,
+        apellidos: document.getElementById("apellidos").value,
+        DNI: document.getElementById("dni").value,
+        fechaNac: document.getElementById("fecha").value,
+        Sexo: document.getElementById("sexo").value,
+        preferencias: document.getElementById("tipoDeporte").value
+    }
+    event.preventDefault();
+    var request = new XMLHttpRequest();
+    request.open('POST', 'http://localhost:3000/clientes');
+    request.setRequestHeader('Content-type', 'application/json');
+    request.send(JSON.stringify(nuevoCliente));
+    console.log("me cago en to");
 }
 /**
  * Cada vez que se introduzca un nuevo cliente, 

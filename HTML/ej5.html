@@ -9,25 +9,25 @@
     </head>
     <body>
         <form id="materialDeportivo">
-            Nombre ce cliente:<input type="text" name="nombreCliente" id="nombreCliente"><br>
+            Nombre de cliente:<input type="text" name="nombreCliente" id="nombreCliente"><br>
             Apellidos:<input type="text" name="apellidos" id="apellidos"><br>
             DNI:<input type="texto" name="dni" id="dni"><br>
             Fecha de nacimiento<input type="date" name="fecha" id="fecha"><br>
             Sexo<br>
-            <input type="radio" name="sexo" id="mujer" value="M">
+            <input type="radio" name="sexo" id="sexo" value="M">
             <label for="mujer">Mujer</label><br>
-            <input type="radio" name="sexo" id="hombre" value="H">
+            <input type="radio" name="sexo" id="sexo" value="H">
             <label for="hombre">Hombre</label><br>
             Deportes de exterior
-            <input type="checkbox" name="exterior" id="exterior" value="ext"><br>
+            <input type="checkbox" name="exterior" id="tipoDeporte" value="ext"><br>
             Deportes de equipo
-            <input type="checkbox" name="equipo" id="equipo" value="equi"><br>
+            <input type="checkbox" name="equipo" id="tipoDeporte" value="equi"><br>
             Deportes individuales
-            <input type="checkbox" name="individuales" id="individuales" value="indv"><br>
+            <input type="checkbox" name="individuales" id="tipoDeporte" value="indv"><br>
             Deportes de interior
-            <input type="checkbox" name="interior" id="interior" value="int"><br>
+            <input type="checkbox" name="interior" id="tipoDeporte" value="int"><br>
             <input type="submit" name="botonBorrar" value="Borrar" id="botonBorrar">
-            <input type="submit" name="botonActualizar" value="Actualizar" id="botonActualizar">
+            <input type="submit" name="botonActualizar" value="Enviar" id="botonEnviar">
         </form>
         <table id="tabla">
             <tr>
@@ -35,9 +35,6 @@
                 <td>Nombre y apellidos</td>
                 <td>Fecha nacimiento</td>
                 <td>Sexo</td>
-            </tr>
-            <tr>
-
             </tr>
         </table>
     </body>
